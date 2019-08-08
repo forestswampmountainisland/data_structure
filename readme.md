@@ -23,8 +23,8 @@ A data structure is a particular way of storing and organizing data in a compute
 
 ## 常见数据结构
 
-1. [线性表](./sequence.md)
-1. [数组](./array.md)
+* [线性表](./sequence.md)
+
 
 ## 算法
 
