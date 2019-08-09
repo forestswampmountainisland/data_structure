@@ -9,7 +9,7 @@ class LinkedList:
         self.length = 0
 
     def append(self, data):
-
+        self.insert(data, self.length)
     
     def insert(self, data, i):
         previous = self.get(i - 1)
@@ -19,6 +19,7 @@ class LinkedList:
         previous.next = SinglePointNode.Node(data)
         # 让插入的节点的next指针指向
         previous.next.next = current
+        self.length += 1
 
     def remove(self, i):
         previous = self.get(i - 1)
@@ -26,6 +27,7 @@ class LinkedList:
         data = None if previous.next == None else previous.next.data
         # 前一个节点指向删除节点的后一个节点
         previous.next = None if previous.next == None else previous.next.next
+        self.length -= 1
         return data
 
     def update(self, data, i):
@@ -37,6 +39,8 @@ class LinkedList:
         while i >= 0:
             if current == None:
                 raise IndexError("Out of index")
+            current = current.next
+            i -= 1
         return current
 
     # 用一个内部类将迭代器封装在类内部
@@ -46,14 +50,11 @@ class LinkedList:
             self.current = self.list.head
         # 迭代器实现__next__
         def __next__(self):
+            self.current = self.current.next
             if self.current == None:
                 raise StopIteration()
-            self.current = self.current.next
             return self.current
     
     # LinkedList是一个可迭代对象，返回一个迭代器
     def __iter__(self):
         return self.Iterator(self)
-
-list = LinkedList()
-list.insert
