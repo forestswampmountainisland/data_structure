@@ -23,7 +23,9 @@ A data structure is a particular way of storing and organizing data in a compute
 
 ## 常见数据结构
 
-* [线性表](./sequence.md)
+* [线性表](./sequence/sequence.md)
+
+* [树](./tree/tree.md)
 
 
 ## 算法

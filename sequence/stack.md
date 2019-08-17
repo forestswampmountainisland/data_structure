@@ -6,11 +6,15 @@
 
 堆栈是实现LIFO的常用数据结构。
 
-Stack实现见[这里](example/stack.py)
+Stack实现见[这里](../example/stack.py)
 
 ## 顺序栈
 
+使用数组实现的栈
+
 ## 链式栈
+
+使用链表实现的栈
 
 ## 使用场景
 
