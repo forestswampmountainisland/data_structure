@@ -1,4 +1,4 @@
-import BinaryTreeNode;
+import BinaryTreeNode
 
 class BinaryTree:
     def __init__(self):
