@@ -4,13 +4,11 @@
 
 数据结构是计算机存储、组织数据的方式。
 
-## 为什么使用数据结构?
+数据结构为算法服务。
 
-A data structure is a particular way of storing and organizing data in a computer so that it can be used efficiently.
+数据结构经过多年的研究，提供了很多现成的解决方案。
 
-正确的使用数据结构可以提升程序的执行效率。
-
-数据结构可以封装具体细节，节省开发时间。
+数据结构也可以帮我们抽象问题，简化思考。
 
 ## 数据结构的常见操作
 
@@ -33,6 +31,13 @@ A data structure is a particular way of storing and organizing data in a compute
 ## 算法
 
 指解题方案的准确而完整的描述，是一系列解决问题的清晰指令，算法代表着用系统的方法描述解决问题的策略机制。
+
+因为数据结构是用来介绍算法的，所以我们会介绍一下一些常见的解决问题的方法：
+
+1. 排序[sort.md](../algorithm/sort.md)
+
+2. 查找[search.md](../algorithm/search.md)
+
 
 ## 复杂度
 
